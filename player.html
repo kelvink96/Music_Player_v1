@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="res/css/bootstrap.min.css">
+    <link rel="stylesheet" href="res/css/all.css">
+    <link rel="stylesheet" href="res/css/player.css">
+    <title>Music Player</title>
+</head>
+<body>
+<!--Background-->
+<div id="bg" class="bg">
+    <div id="blackLayer">
+        <img src="res/img/1.jpg" alt="image 1">
+    </div>
+</div>
+<!--Main Player UI-->
+<div class="main" id="main">
+    <!--Image on player-->
+    <div class="image" id="image">
+        <img src="res/img/1.jpg" alt="image 1">
+    </div>
+    <!--Player UI-->
+    <div class="player" id="player">
+        <div id="songTitle"></div>
+        <div id="buttons">
+            <button id="pre" class="btn-sm btn-dark"><i class="fas fa-backward"></i></button>
+            <button id="play" class="btn btn-primary"><i class="change-icon fas fa-play"></i></button>
+            <button id="pause" class="btn btn-dark no-display"><i class="fas fa-pause"></i></button>
+            <button id="next" class="btn-sm btn-dark"><i class="fas fa-forward"></i></button>
+        </div>
+        <div id="seekBar">
+            <div id="fill"></div>
+            <div id="handle"></div>
+        </div>
+    </div>
+</div>
+<script src="res/js/jquery.min.js"></script>
+<script src="res/js/player.js"></script>
+</body>
+</html>

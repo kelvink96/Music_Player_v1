@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.no-display {
+    display: none;
+}
+
+#bg {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#bg img {
+    height: 120vh;
+    width: 105%;
+    -webkit-filter: blur(20px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#blackLayer {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    z-index: 99;
+}
+
+#main {
+    width: 25%;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+#image img {
+    height: 11em;
+    width: 100%;
+    margin-top: -5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#player {
+    padding: 25px;
+    color: #333333;
+}
+
+#songTitle {
+    width: 100%;
+    text-align: center;
+    color: darkcyan;
+    font-size: 1.05em;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#buttons {
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#seekBar {
+    width: 90%;
+    height: 5px;
+    background-color: grey;
+    display: flex;
+    margin: auto;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#fill {
+    height: 5px;
+    background-color: #007bff;
+    border-radius: 20px;
+    width: 0;
+}
+
+#handle {
+    height: .5em;
+    width: .5em;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin-left: -5px;
+    transform: scale(2);
+}
